@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frank's Toolbox</title>
+  <meta name="description" content="Frank's Toolbox - einfacher Live-Sound Guide für Mikrofone, Headsets, Soundcraft Ui24 und Bose L1." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div><strong>FRANK'S</strong><em>TOOLBOX</em></div>
+      </div>
+
+      <p class="side-kicker">DEIN PRAKTISCHER GUIDE<br>FÜR GUTEN SOUND</p>
+
+      <nav class="nav">
+        <a class="active" href="#home">⌂ <span>Home</span></a>
+        <a href="#handmikrofon">♬ <span>Handmikrofon</span></a>
+        <a href="#headset">◉ <span>Headset</span></a>
+        <a href="#ui24">▣ <span>Soundcraft Ui24</span></a>
+        <a href="#pegeln">▥ <span>Richtig Pegeln</span></a>
+        <a href="#frequenzen">⌁ <span>Frequenzen & EQ</span></a>
+        <a href="#bose">▥ <span>Bose L1 System</span></a>
+        <a href="#roomcheck">▧ <span>Raum Check Tool</span></a>
+        <a href="#quickfix">✦ <span>Quick Fix</span></a>
+        <a href="#goldenrules">● <span>Golden Rules</span></a>
+      </nav>
+
+      <div class="quote">
+        <span>“Good sound starts before the mixer.”</span>
+        <b>— Frank</b>
+      </div>
+    </aside>
+
+    <button class="mobile-menu" id="mobileMenu" aria-label="Menü öffnen">☰</button>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="themeBtn" aria-label="Theme wechseln">☾</button>
+        <a class="start-btn" href="#roomcheck">🎓 Schulung starten</a>
+      </header>
+
+      <section class="hero panel" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">WILLKOMMEN BEI</p>
+          <h1>FRANK'S<br><span>TOOLBOX</span></h1>
+          <p class="hero-sub">Praktisches Wissen. Einfach erklärt. Besserer Sound.</p>
+
+          <div class="benefits">
+            <div><i>↻</i><strong>Verstehen</strong><span>statt raten</span></div>
+            <div><i>♡</i><strong>Einfach</strong><span>statt kompliziert</span></div>
+            <div><i>◖</i><strong>Besser klingen</strong><span>statt laut sein</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Soundcraft Ui24R mit Mikrofon und Headset">
+          <div class="mixer-illustration">
+            <div class="mixer-top"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="mixer-name">Soundcraft Ui24R</div>
+            <div class="mixer-bars"><span></span><span></span><span></span><span></span></div>
+            <div class="hand-mic"></div>
+            <div class="headset-wire"></div>
+            <div class="headset-dot d1"></div>
+            <div class="headset-dot d2"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="dashboard">
+        <section class="topics panel">
+          <h2>WÄHLE EIN THEMA</h2>
+          <div class="topic-grid">
+            <article class="topic-card" data-jump="#handmikrofon"><div class="topic-icon">🎙</div><h3>Handmikrofon</h3><p>Richtig halten, Abstand, Pop-Laute vermeiden und Feedback stoppen.</p><button>Ansehen →</button></article>
+            <article class="topic-card" data-jump="#headset"><div class="topic-icon">🎧</div><h3>Headset</h3><p>Position, Pegel und Tipps für beste Verständlichkeit.</p><button>Ansehen →</button></article>
+            <article class="topic-card" data-jump="#ui24"><div class="topic-icon">🎚</div><h3>Soundcraft Ui24</h3><p>Alle wichtigen Funktionen einfach erklärt — von Gain bis Main Mix.</p><button>Ansehen →</button></article>
+            <article class="topic-card" data-jump="#pegeln"><div class="topic-icon">▥</div><h3>Richtig Pegeln</h3><p>Gain, Fader, Headroom und Clipping — so geht sauberes Pegeln.</p><button>Ansehen →</button></article>
+            <article class="topic-card" data-jump="#frequenzen"><div class="topic-icon">⌁</div><h3>Frequenzen & EQ</h3><p>Verstehen, hören und gezielt Klang formen.</p><button>Ansehen →</button></article>
+            <article class="topic-card" data-jump="#bose"><div class="topic-icon">▥</div><h3>Bose L1 System</h3><p>Aufbau mit 2 Bässen und 2 Säulen — Tipps zur optimalen Aufstellung.</p><button>Ansehen →</button></article>
+            <article class="topic-card featured" data-jump="#roomcheck"><div class="topic-icon">▣</div><h3>Raum Check Tool</h3><p>Raum analysieren und einfache Empfehlungen erhalten.</p><button>Tool starten →</button></article>
+            <article class="topic-card" data-jump="#quickfix"><div class="topic-icon">⚡</div><h3>Quick Fix</h3><p>Schnelle Lösungen für typische Probleme im Live-Betrieb.</p><button>Ansehen →</button></article>
+          </div>
+        </section>
+
+        <aside class="right-stack">
+          <section class="room-card panel" id="roomcheck">
+            <div class="room-head">
+              <h2>RAUM CHECK TOOL</h2>
+              <div class="mode-switch" role="tablist">
+                <button class="active" id="simpleBtn">Simple</button>
+                <button id="proBtn">Pro</button>
+              </div>
+            </div>
+
+            <p class="mic-status"><span></span> Mikrofon bereit</p>
+
+            <div class="tool-actions">
+              <button class="primary" id="startAnalysis">Mikrofonanalyse starten</button>
+              <button id="stopAnalysis">Stop</button>
+              <button id="holdAnalysis">Hold</button>
+              <button id="resetAnalysis">Neu messen</button>
+            </div>
+
+            <div class="simple-view" id="simpleView">
+              <div class="mini-spectrum"><canvas id="miniCanvas"></canvas></div>
+              <div class="progress"><span id="progressBar"></span></div>
+              <p class="analysis-state" id="analysisState">Warte auf Start...</p>
+              <div class="recommendation">
+                <h3>EMPFEHLUNG</h3>
+                <h4 id="recTitle">Noch keine Analyse</h4>
+                <p id="recText">Starte das Tool und sprich oder spiele Sound im Raum ab.</p>
+                <strong id="recDb">0 dB</strong>
+              </div>
+            </div>
+
+            <div class="pro-view hidden" id="proView">
+              <div class="big-spectrum"><canvas id="proCanvas"></canvas></div>
+              <div class="pro-readouts">
+                <div><span>Peak</span><b id="peakFreq">–</b></div>
+                <div><span>Risk</span><b id="riskLevel">–</b></div>
+                <div><span>Hold</span><b id="holdState">OFF</b></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tip panel">
+            <h3>💡 TIPP DES TAGES</h3>
+            <p>Gain zuerst einstellen, dann erst den Fader hochziehen. So vermeidest du Rauschen und Verzerrungen.</p>
+          </section>
+        </aside>
+      </div>
+
+      <section class="quickfix panel" id="quickfix">
+        <h2>SCHNELLE LÖSUNGEN</h2>
+        <div class="quick-buttons">
+          <button data-fix="tooQuiet">🎙 Mikro zu leise</button>
+          <button data-fix="muddy">🌀 Klang dumpf</button>
+          <button data-fix="feedback">⚠ Feedback / Pfeifen</button>
+          <button data-fix="bass">🔊 Bass dröhnt</button>
+          <button data-fix="clip">🔥 Verzerrt / Clipping</button>
+          <button data-fix="speech">💬 Kaum verständlich</button>
+        </div>
+        <div class="fix-output" id="fixOutput">Wähle ein Problem aus.</div>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card panel" id="handmikrofon"><h2>HANDMIKROFON</h2><ul><li>Abstand Mund–Mikro: ca. 5–10 cm.</li><li>Nicht auf den Lautsprecher richten.</li><li>Bei lauten Stimmen etwas weiter weg, bei leisen näher ran.</li><li>Nie unten am Korb zuhalten — das verstärkt Feedback.</li></ul></article>
+        <article class="info-card panel" id="headset"><h2>HEADSET</h2><ul><li>Kapsel leicht seitlich am Mundwinkel positionieren.</li><li>Nicht direkt vor den Mund, sonst entstehen Pop-Geräusche.</li><li>Vor dem Kurs kurz mit normaler Sprechlautstärke testen.</li></ul></article>
+        <article class="info-card panel" id="ui24"><h2>SOUNDCRAFT UI24</h2><ul><li>Gain am Kanal einstellen, bis Signal sauber und ohne Rot ankommt.</li><li>EQ nur vorsichtig verwenden: störende Frequenzen lieber senken als alles boosten.</li><li>Mute-Gruppen nutzen, damit Pausen sauber bleiben.</li><li>Szene speichern, wenn ein Setup gut funktioniert.</li></ul></article>
+        <article class="info-card panel" id="pegeln"><h2>RICHTIG PEGELN</h2><ul><li>Fader erst auf 0 dB stellen, dann Gain anpassen.</li><li>Bei Sprache genügend Headroom lassen.</li><li>Rot bedeutet Gefahr: Clipping klingt hart und unprofessionell.</li></ul></article>
+        <article class="info-card panel" id="frequenzen"><h2>FREQUENZEN & EQ</h2><ul><li>80–120 Hz: Bass / Wummern.</li><li>200–400 Hz: dumpf und boxy.</li><li>1–3 kHz: Verständlichkeit, aber auch Schärfe.</li><li>5–8 kHz: Präsenz und Zischlaute.</li></ul></article>
+        <article class="info-card panel" id="bose"><h2>BOSE L1 SYSTEM</h2><ul><li>Säulen möglichst frei und leicht vor den Mikrofonen positionieren.</li><li>Bässe nicht in Ecken pressen, wenn es dröhnt.</li><li>Beide Seiten gleichmäßig ausrichten, nicht direkt gegen harte Glasflächen.</li></ul></article>
+      </section>
+
+      <section class="golden panel" id="goldenrules">
+        <h2>FRANK'S GOLDEN RULES</h2>
+        <div class="rules">
+          <div><b>1.</b> Gain before volume.</div>
+          <div><b>2.</b> Cut before boost.</div>
+          <div><b>3.</b> Wenn es pfeift: ruhig bleiben, Frequenz suchen.</div>
+          <div><b>4.</b> Gute Aufstellung ist halber Sound.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
